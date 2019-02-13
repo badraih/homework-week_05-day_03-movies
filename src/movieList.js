@@ -185,15 +185,14 @@ class MovieList extends Component {
 
 //? 
          var castMovies= movies.map((movie)=> {
-            return <Cast castinfo={movie.cast}/>;
+            return <Cast castinfo={movie}/>;
           });
           
     return (
       <div>
           The movie list
           {movieComponent}
-          {castMovies}
-          
+          {castMovies} 
       </div>
     );
   }
